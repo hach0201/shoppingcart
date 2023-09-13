@@ -1,0 +1,83 @@
+
+.container{
+    margin: auto;
+    margin-top: 20px;
+    /* border: 3px solid black; */
+}
+.col-md-, .col-lg-4{
+    margin-bottom: 20px;
+}
+.sty{
+    font-size: 18px !important;
+    color: black !important;
+}
+.num{
+    width: 80px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+.uk-border-circle{
+    width: 100px !important;
+    height: 100px !important;
+}
+.fa-cart-arrow-down{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+h2{
+    text-align: center;
+    margin-left: 20px;
+}
+.row{
+    
+    margin-left:120px;
+    margin-top: 10px;
+}
+
+
+
+/* Add a class to the like button in your HTML code, e.g., class="like-button" */
+
+/* Target the like button by its class */
+button.like-button {
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-bottom: 70px;
+}
+
+button.like-button::before {
+    font-size: 3em;
+    color: #000;
+    content: '♥';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button.like-button::after {
+    font-size: 3em;
+    color: red;
+    content: '♥';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+}
+
+/* Add the 'liked' class to the button when it's liked */
+button.like-button.liked::after {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
